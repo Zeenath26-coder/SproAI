@@ -1,0 +1,146 @@
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 140px 100px 80px;
+  background: radial-gradient(circle at top right, #222, #050505 40%);
+}
+
+.hero-left {
+  max-width: 700px;
+}
+
+.hero-right {
+  width: 450px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 12px 26px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--primary);
+  color: #fff;
+  transition: all 0.3s ease;
+  margin-bottom: 28px;
+}
+
+.badge:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 15px rgba(91, 108, 255, 0.25);
+}
+
+.hero h1 {
+  font-size: 72px;
+  line-height: 1.05;
+  letter-spacing: -2px;
+}
+
+.hero h1 span {
+  display: block;
+  background: linear-gradient(90deg, white, #777);
+
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero p {
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 1.7;
+  color: #999;
+  max-width: 600px;
+}
+
+.features-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.feature-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.feature-tag i {
+  width: 16px;
+  height: 16px;
+  color: var(--accent);
+  stroke-width: 2;
+}
+
+.dot {
+  color: var(--border-strong);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 120px 24px 60px;
+    gap: 50px;
+  }
+
+  .hero-left {
+    width: 100%;
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+    line-height: 1.15;
+    letter-spacing: -1px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    margin: 24px auto 0;
+    max-width: 100%;
+  }
+
+  .badge {
+    margin-bottom: 20px;
+  }
+
+  .features-line {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1100px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 70px;
+
+    padding: 140px 70px 80px;
+  }
+
+  .hero-left {
+    max-width: 700px;
+  }
+
+  .hero-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

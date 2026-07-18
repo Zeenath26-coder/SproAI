@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartProgress AI</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img
+            src="../assets/images/sproai-logo.png"
+            alt="Spro AI"
+            class="logo-img"
+          />
+        </div>
+        <ul class="nav-links">
+          <li><a data-scroll-to="hero">Overview</a></li>
+          <li><a data-scroll-to="how-it-works">Workflow</a></li>
+          <li><a data-scroll-to="features">Features</a></li>
+          <li><a data-scroll-to="pricing">Pricing</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="btn-signin">Sign In</button>
+
+          <button class="btn-download">Get Started</button>
+        </div>
+
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </nav>
+
+      <div class="menu-overlay"></div>
+      <div class="mobile-menu">
+        <a data-scroll-to="hero">Overview</a>
+        <a data-scroll-to="how-it-works">Workflow</a>
+        <a data-scroll-to="features">Features</a>
+        <a data-scroll-to="pricing">Pricing</a>
+
+        <button class="btn-signin">Sign In</button>
+        <button class="btn-download">Get Started</button>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="hero" id="hero">
+        <div class="hero-left">
+          <div class="badge">AI-Powered Workplace Assistant</div>
+
+          <h1>
+            Move beyond daily updates <span> intelligent work reporting</span>
+          </h1>
+          <p>
+            SmartProgress AI is an AI workplace assistant that transforms your
+            daily work into structured progress reports, team updates, and
+            actionable insights.
+          </p>
+
+          <div class="hero-buttons">
+            <button class="primary-btn">Get Started</button>
+
+            <button class="secondary-btn" data-scroll-to="how-it-works">
+              Workflow
+            </button>
+          </div>
+
+          <div class="features-line">
+            <span class="feature-tag"
+              ><i data-lucide="sparkles"></i> AI Agent</span
+            >
+            <span class="dot">•</span>
+            <span class="feature-tag"
+              ><i data-lucide="brain"></i> Smart Memory</span
+            >
+            <span class="dot">•</span>
+            <span class="feature-tag"
+              ><i data-lucide="mail"></i> Email Automation</span
+            >
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="ai-window">
+            <div class="window-header">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class="ai-content">
+              <div class="ai-top">
+                <div class="robot-wrap" id="robot-wrap">
+                  <svg
+                    class="robot"
+                    viewBox="0 0 200 200"
+                    width="120"
+                    height="120"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="robotGrad"
+                        x1="0"
+                        y1="0"
+                        x2="1"
+                        y2="1"
+                      >
+                        <stop offset="0%" stop-color="#a855f7" />
+                        <stop offset="100%" stop-color="#3b82f6" />
+                      </linearGradient>
+                    </defs>
+
+                    <rect
+                      x="30"
+                      y="40"
+                      width="140"
+                      height="120"
+                      rx="36"
+                      fill="url(#robotGrad)"
+                      opacity="0.15"
+                      stroke="url(#robotGrad)"
+                      stroke-width="3"
+                    />
+
+                    <line
+                      x1="100"
+                      y1="40"
+                      x2="100"
+                      y2="18"
+                      stroke="url(#robotGrad)"
+                      stroke-width="3"
+                    />
+                    <circle cx="100" cy="14" r="6" fill="url(#robotGrad)" />
+
+                    <circle
+                      cx="72"
+                      cy="100"
+                      r="26"
+                      fill="#0F0F10"
+                      stroke="url(#robotGrad)"
+                      stroke-width="2"
+                    />
+                    <circle
+                      cx="128"
+                      cy="100"
+                      r="26"
+                      fill="#0F0F10"
+                      stroke="url(#robotGrad)"
+                      stroke-width="2"
+                    />
+
+                    <circle
+                      id="pupil-left"
+                      cx="72"
+                      cy="100"
+                      r="10"
+                      fill="url(#robotGrad)"
+                    />
+                    <circle
+                      id="pupil-right"
+                      cx="128"
+                      cy="100"
+                      r="10"
+                      fill="url(#robotGrad)"
+                    />
+
+                    <rect
+                      x="85"
+                      y="140"
+                      width="30"
+                      height="6"
+                      rx="3"
+                      fill="url(#robotGrad)"
+                      opacity="0.6"
+                    />
+                  </svg>
+                </div>
+                <div class="ai-heading">
+                  <h3>SmartProgress AI Agent</h3>
+                  <p>
+                    I analyzed your work and prepared today's progress report.
+                  </p>
+                </div>
+              </div>
+              <div class="report-box" id="report-box">
+                <p class="report-hint">Select what you completed today</p>
+
+                <div class="report-checklist" id="report-checklist">
+                  <label
+                    class="report-item"
+                    data-text="Completed the Employee API"
+                  >
+                    <input type="checkbox" /> Completed Employee API
+                  </label>
+
+                  <label
+                    class="report-item"
+                    data-text="fixed the authentication issue"
+                  >
+                    <input type="checkbox" />
+                    Fixed authentication issue
+                  </label>
+                  <label
+                    class="report-item"
+                    data-text="learned Spring Security concepts"
+                  >
+                    <input type="checkbox" />
+                    Learned Spring Security concepts
+                  </label>
+                </div>
+
+                <div class="draft-preview" id="draft-preview">
+                  <div class="draft-header">
+                    <span class="draft-label">Subject</span>
+                    <span class="draft-subject">
+                      Daily progress update- Jul 14</span
+                    >
+                  </div>
+
+                  <div class="draft-body">
+                    Hi team, <br /><br />
+                    Quick update on today's progress,<span
+                      id="draft-body-content"
+                    ></span
+                    ><br />
+
+                    Best regards, <br />Ben Thunder
+                  </div>
+
+                  <div class="draft-sent" id="draft-sent">
+                    ✓ Email sent to your team
+                  </div>
+                </div>
+              </div>
+
+              <button class="generate-btn" id="generate-btn">
+                Generate Report
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-it-works" id="how-it-works">
+        <div class="section-heading">
+          <div class="badge">Workflow</div>
+          <h2>Three steps, then it's automatic</h2>
+          <p>Set it up once. Every day after, it takes ten seconds</p>
+        </div>
+
+        <div class="steps">
+          <div class="step-card">
+            <span class="step-number">01</span>
+            <h3>Set up once</h3>
+            <p>
+              Add your recipients, subject format , greeting, and signature.
+              You'll never fill these in again.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <span class="step-number">02</span>
+            <h3>Tick what you did</h3>
+            <p>
+              Each day, check off the task items you completed. No typing
+              required.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <span class="step-number">03</span>
+            <h3>AI drafts it, you send</h3>
+            <p>
+              Your update is written automatically. Review it, edit if you like,
+              click send.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" id="features">
+        <div class="section-heading">
+          <div class="badge">Features</div>
+          <h2>Everything the daily grind nedded removed</h2>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="brain-circuit"></i></div>
+            <h3>Smart Memory</h3>
+            <p>
+              Recipients, subject format , greeting , and signature are
+              remembered after the first setup - never re-entered.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="bot"></i></div>
+            <h3>AI Agent</h3>
+            <p>
+              Turns the items you tick off into a clear , well-written progress
+              update - no typing required.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="send"></i></div>
+            <h3>Email Automation</h3>
+            <p>
+              Review the draft, edit if needed , and send - the same recipients
+              and format every time, automatically.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing" id="pricing">
+        <div class="section-heading">
+          <div class="badge">Pricing</div>
+          <h2>Free while in beta</h2>
+          <p>No credit card. Just set it up and start sending.</p>
+        </div>
+
+        <div class="pricing-card">
+          <h3>Beta access</h3>
+          <div class="price">$0<span>/month</span></div>
+          <ul class="pricing-features">
+            <li>Unlimited daily updates</li>
+            <li>Smart Memory for recipients &amp; signature</li>
+            <li>AI-generated drafts</li>
+            <li>Full update history</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <img
+              src="../assets/images/sproai-logo.png"
+              alt="Spro AI"
+              class="logo-img footer-logo"
+            />
+            <p>Daily progress updates, without the daily effort.</p>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-col">
+              <h5>Overview</h5>
+              <a href="#features">Features</a>
+              <a href="#how-it-works">Workflow</a>
+              <a href="#pricing">Pricing</a>
+            </div>
+            <div class="footer-col">
+              <h5>Company</h5>
+              <a href="#">About</a>
+              <a href="#">Contact</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Spro AI. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script type="module" src="../dist/main.js"></script>
+  </body>
+</html>

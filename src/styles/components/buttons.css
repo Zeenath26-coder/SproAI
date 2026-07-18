@@ -1,0 +1,116 @@
+.btn-signin {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #5b6cff;
+  border-radius: 20px;
+  padding: 10px 22px;
+  transition: all 0.3s ease;
+  margin-left: 20px;
+}
+
+.btn-signin:hover {
+  background: rgba(91, 108, 255, 0.12);
+  border-color: #5b6cff;
+  color: #7c8cff;
+  box-shadow: 0 0 15px rgba(91, 108, 255, 0.25);
+}
+
+.btn-download {
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #5b6cff, #8b5cf6);
+  color: #fff;
+  border: 1px solid #5b6cff;
+  transition: all 0.3s ease;
+}
+.btn-download:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+.btn-download {
+  border-radius: 30px;
+  padding: 10px 22px;
+  font-weight: 300;
+  margin-left: 12px;
+}
+
+.btn-download:hover {
+  box-shadow: 0 8px 20px rgba(91, 108, 255, 0.35);
+}
+
+.primary-btn {
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #5b6cff, #8b5cf6);
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+}
+.primary-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+.primary-btn {
+  margin-top: 15px;
+}
+
+.secondary-btn {
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #111;
+  color: #fff;
+  border: 1px solid #5b6cff;
+  transition: all 0.3s ease;
+}
+.secondary-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+.secondary-btn {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.generate-btn {
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #5b6cff, #8b5cf6);
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+}
+.generate-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+.generate-btn {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.generate-btn.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .btn-signin,
+  .btn-download,
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+    margin-left: 0;
+  }
+  .primary-btn,
+  .secondary-btn {
+    margin-top: 12px;
+  }
+}/*# sourceMappingURL=buttons.css.map */
